@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>menu</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="storename">
+          <div>
+            <img
+              class="icon"
+              src="images/icon/CoffeeCrafterLogo.jpg"
+              alt=""
+              width="50"
+              height="50"
+            />
+          </div>
+          <div class="name"><a href="/">CoffeeCrafter</a></div>
+        </div>
+
+        <div class="nav">
+          <a class="nav-el" href="/">home</a>
+          <a class="nav-el" href="about.html">about us</a>
+          <a class="nav-el" href="menu.html">menu</a>
+          <a class="nav-el" href="contact.html">contact us</a>
+          <div class="order order-nav">
+            <a href="order.html">order now</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="menu-container">
+        <div class="products">
+          <div class="product">
+            <figure>
+              <img
+                class="product-image"
+                src="images/products/affogato (2).jpg"
+                alt=""
+                width="390"
+                height="240"
+              />
+            </figure>
+            <figcaption>
+              <div class="caption-container">
+                <p class="caption">AFFOGATO</p>
+                <p class="price">195PHP</p>
+                <div class="add-to-cart atc-affogato">
+                  <button onclick="addToCart()">ADD TO CART</button>
+                </div>
+              </div>
+            </figcaption>
+          </div>
+          <div class="product">
+            <figure>
+              <img
+                class="product-image"
+                src="images/products/espresso.jpg"
+                alt=""
+                width="390"
+                height="240"
+              />
+            </figure>
+            <figcaption>
+              <div class="caption-container">
+                <p class="caption">ESPPRESSO</p>
+                <p class="price">50PHP</p>
+                <div class="add-to-cart atc-espresso">
+                  <button onclick="addToCart()">ADD TO CART</button>
+                </div>
+              </div>
+            </figcaption>
+          </div>
+          <div class="product">
+            <figure>
+              <img
+                class="product-image"
+                src="images/products/mocha.jpg"
+                alt=""
+                width="390"
+                height="240"
+              />
+            </figure>
+            <figcaption>
+              <div class="caption-container">
+                <p class="caption">MOCHA</p>
+                <p class="price">180PHP</p>
+                <div class="add-to-cart atc-mocha">
+                  <button onclick="addToCart()">ADD TO CART</button>
+                </div>
+              </div>
+            </figcaption>
+          </div>
+          <div class="product">
+            <figure>
+              <img
+                class="product-image"
+                src="images/products/flatwhite (2).jpg"
+                alt=""
+                width="390"
+                height="240"
+              />
+            </figure>
+            <figcaption>
+              <div class="caption-container">
+                <p class="caption">FLAT WHITE</p>
+                <p class="price">170PHP</p>
+                <div class="add-to-cart atc-flatwhite">
+                  <button onclick="addToCart()">ADD TO CART</button>
+                </div>
+              </div>
+            </figcaption>
+          </div>
+          <div class="product">
+            <figure>
+              <img
+                class="product-image"
+                src="images/products/cappuccino.jpg"
+                alt=""
+                width="390"
+                height="240"
+              />
+            </figure>
+            <figcaption>
+              <div class="caption-container">
+                <p class="caption">CAPPUCCINO</p>
+                <p class="price">205PHP</p>
+                <div class="add-to-cart atc-cappuccino">
+                  <button onclick="addToCart()">ADD TO CART</button>
+                </div>
+              </div>
+            </figcaption>
+          </div>
+          <div class="product">
+            <figure>
+              <img
+                class="product-image"
+                src="images/products/palazzo.jpg"
+                alt=""
+                width="390"
+                height="240"
+              />
+            </figure>
+            <figcaption>
+              <div class="caption-container">
+                <p class="caption">PALAZZO</p>
+                <p class="price">145PHP</p>
+                <div class="add-to-cart atc-palazzo">
+                  <button onclick="addToCart()">ADD TO CART</button>
+                </div>
+              </div>
+            </figcaption>
+          </div>
+          <div class="product">
+            <figure>
+              <img
+                class="product-image"
+                src="images/products/cortado.jpg"
+                alt=""
+                width="390"
+                height="240"
+              />
+            </figure>
+            <figcaption>
+              <div class="caption-container">
+                <p class="caption">CORTADO</p>
+                <p class="price">210PHP</p>
+                <div class="add-to-cart atc-CORTADO">
+                  <button onclick="addToCart()">ADD TO CART</button>
+                </div>
+              </div>
+            </figcaption>
+          </div>
+          <div class="product">
+            <figure>
+              <img
+                class="product-image"
+                src="images/products/ristretto.jpg"
+                alt=""
+                width="390"
+                height="240"
+              />
+            </figure>
+            <figcaption>
+              <div class="caption-container">
+                <p class="caption">RISTRETTO</p>
+                <p class="price">195PHP</p>
+                <div class="add-to-cart atc-ristretto">
+                  <button onclick="addToCart()">ADD TO CART</button>
+                </div>
+              </div>
+            </figcaption>
+          </div>
+          <div class="product">
+            <figure>
+              <img
+                class="product-image"
+                src="images/products/americano.jpg"
+                alt=""
+                width="390"
+                height="240"
+              />
+            </figure>
+            <figcaption>
+              <div class="caption-container">
+                <p class="caption">AMERICANO</p>
+                <p class="price">170PHP</p>
+                <div class="add-to-cart atc-americano">
+                  <button onclick="addToCart()">ADD TO CART</button>
+                </div>
+              </div>
+            </figcaption>
+          </div>
+        </div>
+        <div class="sidebar">
+          <div class="orders">
+            <div class="items"><h4>PRODUCT NAME</h4></div>
+            <div class="quantity"><h4>QUANTITY</h4></div>
+            <div class="price-order"><h4>PRICE</h4></div>
+          </div>
+          <div class="total">
+            <p>TOTAL:</p>
+            <p>0</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>
+        <em
+          >*Prices vary on different store locations and might change without
+          notice.</em
+        >
+      </p>
+    </footer>
+  </body>
+</html>
