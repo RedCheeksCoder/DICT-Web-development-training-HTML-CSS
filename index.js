@@ -56,7 +56,7 @@ function addToCart(id) {
 
 function delElement(a) {
   cart.splice(a, 1);
-  /* displaycart(); */
+  displaycart();
 }
 let finalTotal = 0;
 function displaycart() {
@@ -89,12 +89,22 @@ function displaycart() {
 }
 let receipt = "";
 function displayReceipt() {
-  cart.map((items) => {
-    let { title } = items;
-    receipt += `${title} \n`;
-  });
-  alert(`ORDER RECEIPT: \n${receipt} \n TOTAL: PHP ${finalTotal}`);
-  document.getElementById(
-    "orders"
-  ).innerHTML = `<div style="text-align: center"><p>"Your cart is empty"</p></div>`;
+  if (cart.length === 0) {
+    alert(
+      "There's no orders in your cart. Please add a product first before placing your order."
+    );
+  } else {
+    cart.map((items) => {
+      let { title } = items;
+      receipt += `${title} \n`;
+    });
+    alert(`ORDER RECEIPT: \n${receipt} \n TOTAL: PHP ${finalTotal}`);
+    document.getElementById(
+      "orders"
+    ).innerHTML = `<div style="text-align: center"><p>"Your cart is empty"</p></div>`;
+    cart = [];
+    displaycart();
+    receipt = "";
+    finalTotal = 0;
+  }
 }
